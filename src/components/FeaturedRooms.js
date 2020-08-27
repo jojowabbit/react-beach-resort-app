@@ -6,7 +6,8 @@ export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
 
   render() {
-    const { greeting, name } = this.context;
-    return <div>FeaturedRooms {greeting + name}</div>;
+    // rename featuredRooms to rooms
+    const { featuredRooms: rooms } = this.context;
+    return <div>FeaturedRooms {console.log(rooms)}</div>;
   }
 }
